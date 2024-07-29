@@ -1,0 +1,55 @@
+            body{
+                background-color: white;
+            }
+            h1, h2{
+                color:rgb(206, 52, 6);
+                text-align: center;
+            }
+
+            h1{
+                text-transform: uppercase;
+            }
+
+            p{
+                text-align: justify;
+                color:rgb(199, 52, 12);
+            }
+
+            header{
+                background-color: rgb(204, 202, 202);
+            }
+            
+            main{
+                margin:auto 20%;
+            }
+
+            footer{
+                background-color: rgb(204, 202, 202);
+                font-style: italic;
+                padding: 15px;
+            }
+
+            .destaque{
+                background-color:rgb(199, 52, 12);
+                color:beige;
+                padding: 20px;
+                margin-bottom: 50px;
+            }
+
+            #img-logo{
+                width: 60px;
+            }
+
+            nav li{
+                display: inline;
+                margin-left: 20px;
+                margin-right: 20px;
+                color:rgb(199, 52, 12);
+                font-weight: bold;
+                border: 2px solid rgb(199, 52, 12);
+                padding: 5px;
+            }
+
+            nav{
+                float: right;
+            }
