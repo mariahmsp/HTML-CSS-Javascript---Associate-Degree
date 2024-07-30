@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta charset=""UTF-8" />
+        
+        <script>
+            //passo 01: Entrada de Dados
+            const n1=prompt("Digite um número")
+            const n2=prompt("Digite um número")
+            
+            //passo 02: Processamento
+            const soma = number(n1)+number(n2)
+            
+            /*
+            O operador + serve tanto para somar quanto para concatenar (juntar)
+            No caso do const n1=prompt("Digite um número") e const n2=prompt("Digite mais um número"), estamos utilizando um script, um texto, pedindo para que usuário digite um número.
+            Ou seja, se for n1+n2, sendo um script (texto) ao invés de numerico, pode dar o resultado de junção de n1 e n2. Digamos que n1=1 e n2=2, resultado será 12.
+            No caso de const n1=1 e const n2=2, sendo númerico, então o operador + irá realizar a soma, tendo resultado = 3.
+            
+            Se utilizarmos o parseInt, tudo o que estiver entre parênteses estaremos transformando em INTEIRO.
+            Ou seja, se const n1=prompt("Digite um número") vai ser interpretado como string, qualquer numero que o usuario digitar será interpretado apenas como texto.
+            Mas se const n1=parseInt(prompt("Digite um número")), vai ser interpretado como inteiro, portanto, será interpretado como SOMA.
+            Há um porém: somente o operador + tem essa dupla funcionalidade (de somar e de juntar), outros operadores aritméticos com uma variável INTEIRO não irá funcionar da mesma forma.
+            Por exemplo: n1-n2, sendo n1=1 e n2=2, ao invés de 1-2=1, o resultado será -1, pois será interpretado como INTEIRO (se utilizado parseInt).
+            
+            Se quiser um número decimal, por ex 7.2 + 6.1, então utiliza-se parseFloat (Float = decimal), caso os numeros digitados pelo usuario forem os do exemplo, será calculado corretamente. Resultado: 13.3
+            Se fosse parseInt, caso usuario digitasse 7.2 + 6.1, o resultado seria um numero inteiro, no caso, resultado = 13.
+            
+            Uma forma ainda mais simplificada é de escrever, na soma da variável "const soma", "number(n1)" e "number(n2)", irá identificar automaticamente se é um INTEIRO ou DECIMAL, com o resultado de acordo.
+            */
+
+            //passo 03: Saída
+            console.log(soma)
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
