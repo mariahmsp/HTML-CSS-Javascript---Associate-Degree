@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Estruturas de Condição - Calcular média</title>
+    <script>
+        const n1= Number(prompt("Digite a primeira nota"))
+        const n2= Number(prompt("Digite a segunda nota"))
+        const n3= Number(prompt("Digite a terceira nota"))
+        const n4= Number(prompt("Digite a quarta nota"))
+
+        const media = (n1 + n2 + n3 + n4) / 4
+
+        console.log('A média é:' + média)
+
+        if(media >= 7){
+            console.log('Aprovado!')
+        } else {
+            if(media < 5){
+                console.log('Reprovado!')
+            } else {
+                console.log('Recuperação. Você tem mais uma chance, estude para ser Aprovado.')
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
