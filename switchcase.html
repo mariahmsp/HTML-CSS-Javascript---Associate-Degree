@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch Case</title>
+    <script>
+
+        /*
+        Verificar o aumento de salário de acordo com os serguintes cargos:
+        Estagiário: 100%
+        Analista: 50%
+        Gerente: 30%
+        Presidente: 10%
+        */
+
+        const salario = prompt('Digite o Salário');
+        const cargo = prompt('Digite o Cargo');
+        let aumento = 0;
+
+        switch(cargo) {
+            case "Estagiário": aumento = 1; break;
+            case "Analista": aumento = 0.5; break;
+            case "Gerente": aumento = 0.3; break;
+            case "Presidente": aumento = 0.1; break;
+            default: alert('Por favor, escolha um cargo válido.')
+        }
+        const novoSalario = salario + (salario*aumento)
+         
+
+        console.log("O novo salário é: R$ " + novoSalario)
+    </script>
+</head>
+<body>
+</body>
+</html>

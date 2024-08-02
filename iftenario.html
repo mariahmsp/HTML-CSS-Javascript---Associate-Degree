@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Estruturas de Condição - Calcular média</title>
+    <script>
+        const n1= Number(prompt("Digite a primeira nota"))
+        const n2= Number(prompt("Digite a segunda nota"))
+        const n3= Number(prompt("Digite a terceira nota"))
+        const n4= Number(prompt("Digite a quarta nota"))
+
+        const media = (n1 + n2 + n3 + n4) / 4
+
+        console.log('A média é:' + média)
+
+/*      Assim seria normalmente:
+        let mensagem = ""
+        if(media>=7){
+            console.log('Aprovado')
+        } else {
+            console.log('Reprovado')
+        }
+        console.log(mensagem)
+*/
+
+        // Em If Tenario:
+        let mensagem = media >= 7 ? 'Aprovado' : 'Reprovado'
+        console.log(mensagem)
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>
