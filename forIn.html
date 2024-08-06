@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>For In and For Off</title>
+    
+    <script>
+        const nome = 'Orion'
+        const nota = 1
+
+        const pessoa = {
+            nome: 'Orion', 
+            telefone: '(61) 987654321', 
+            endereço: 'ABCDEF'
+        }
+/*  for in:
+        for(let atributo in pessoa){
+            console.log(atributo + ' -> ' + pessoa[atributo])
+        }
+*/
+        const carros = ['Gol', 'Fusca', 'Virtus', 'Ka']
+        
+        //for of:
+        for(let elemento of carros){
+            console.log(elemento);
+        }
+
+        console.log(carros[0]);
+    </script> 
+</head>
+<body>
+    
+</body>
+</html>

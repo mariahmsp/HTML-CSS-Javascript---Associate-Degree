@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>While</title>
+    
+    <script>
+        let contador = 1
+        const qtd = prompt('Quantas notas?')
+        let soma = 0
+        let nota = 0
+
+        while(contador <= qtd){
+            nota = Number(prompt('Digite a nota ' + contador))
+            soma = soma + nota
+            // contador = contador + 1
+            contador++
+        }
+        console.log('Soma: ' + soma)
+        console.log('Nota: ' + nota)
+
+        const media = soma/qtd
+        console.log('Média: ' + media)
+
+        const resultado = media >=7 ? 'Aprovado' : 'Reprovado'
+        console.log('Resultado: ' + resultado)
+    </script> 
+</head>
+<body>
+    
+</body>
+</html>
