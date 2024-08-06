@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Eleitores</title>
+
+    <script>
+        // Entrada
+        // Processamento
+        // Saída
+
+        const anoVotação = Number(prompt('Digite o ano da Eleição'))
+        const anoNasc = Number(prompt('Digite o ano de Nascimento'))
+
+        const idade = anoVotação - anoNasc
+
+        if(idade<16){
+            console.log('Você não tem idade mínima para votar. Sua idade atual: ' + idade + ' anos') 
+        } else if(idade >=18 && idade <65){
+            console.log('Sua votação é obrigatória! Sua idade atual: ' + idade + ' anos')
+        } else {
+            console.log('Você pode ou não votar, é facultativo! Sua idade atual: ' + idade + ' anos')
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
